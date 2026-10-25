@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>瓦尔登湖 · 林中生活</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="vignette"></div>
+  <div id="fade"><div id="fadeText"></div></div>
+
+  <div id="hud" class="hidden">
+    <div id="date">
+      <div id="dateLine"></div>
+      <div id="timeLine"></div>
+    </div>
+    <div id="keys">
+      <span><b>J</b> 日记</span><span><b>M</b> 地图</span><span><b>H</b> 帮助</span>
+    </div>
+    <div id="status"></div>
+    <div id="cross"></div>
+    <div id="prompt"></div>
+    <div id="toasts"></div>
+    <div id="flute" class="hidden">笛 · 按 <b>1</b>–<b>8</b> 吹奏，静候片刻笛声会自己流淌 · <b>F</b> 收起</div>
+  </div>
+
+  <div id="title">
+    <div class="title-inner">
+      <div class="title-sub">亨利·戴维·梭罗 · 一八四五</div>
+      <h1>瓦尔登湖</h1>
+      <div class="title-sub2">林 中 生 活</div>
+      <p class="quote">“我到林中去，是因为我想从容地过日子，<br/>只去面对生活中最根本的事实。”</p>
+      <div class="title-buttons">
+        <button id="btnContinue" class="hidden">继续林中的日子</button>
+        <button id="btnNew">走入林中</button>
+      </div>
+      <div id="loading">正在生长树木……</div>
+      <div class="title-tips">
+        <span>WASD 漫步</span><span>鼠标 环顾</span><span>E 互动</span><span>C 静坐</span><span>F 吹笛</span><span>J 日记</span><span>M 地图</span>
+      </div>
+      <div class="title-note">这里没有任务，也没有失败。锄豆、钓鱼、拾柴、读书，或者什么也不做，只是看着湖。</div>
+    </div>
+  </div>
+
+  <div id="panel" class="hidden">
+    <div id="panelCard">
+      <button id="panelClose" title="关闭 (Esc)">×</button>
+      <div id="panelBody"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
